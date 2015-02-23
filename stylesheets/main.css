@@ -1,0 +1,20 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+#map {
+  height: 95%;
+  width: 100%;
+}
+
+#map_title {
+  height: 5%;
+  width: 100%;
+  font: 18px 'Raleway', sans-serif;
+}
+
+.leaflet-popup-content {
+  font-family: 'Raleway', sans-serif;
+}
