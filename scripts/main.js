@@ -9,10 +9,24 @@ L.tileLayer.provider(provider_name).addTo(map);
 
 map.attributionControl.setPrefix('311 Complaints via NYC OpenData');
 
+var today = new Date();
+var dd = today.getDate();
+var mm = today.getMonth()+1;
+var yyyy = today.getFullYear();
+
+if(dd<10) {
+  dd = '0' + dd
+}
+
+if(mm<10) {
+  mm = '0' + mm
+}
+
+today = yyyy + '-' + mm + '-' + dd;
 
 //data URL variables
 var start_date = '2015-01-01'; //YYYY-MM-DD
-var end_date = '2015-01-08'; //YYYY-MM-DD
+var end_date = today; //YYYY-MM-DD
 var borough = 'BRONX';
 var c_type = 'Noise'; //complaint type
 
